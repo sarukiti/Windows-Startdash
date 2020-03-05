@@ -1,0 +1,2 @@
+# Windows-Startdash
+Powershellで動作する自動ソフトウェアダウンロードツールです
