@@ -1,0 +1,1 @@
+Invoke-WebRequest -Uri "https://discordapp.com/api/download?platform=win" -OutFile "Discord.exe"
