@@ -6,7 +6,7 @@ Add-Type -AssemblyName PresentationFramework
 <Window
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    Title="xaml test #2"
+    Title="WindowsStartdash"
     Width="170pt" Height="170pt">
   <StackPanel>
     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
