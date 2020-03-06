@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<Application>
+    <Software>
+        <Name>Bluestacks</Name>
+        <Overview>軽快に動作するAndroidエミュレーター</Overview>
+        <URL>http://cdn3.bluestacks.com/downloads/windows/bgp/4.180.0.1051/29c601a4ce7cd71c6c370cdd097e45b7/BlueStacksMicroInstaller_4.180.0.1051_native.exe</URL>
+    </Software>
+    <Software>
+        <Name>Discord</Name>
+        <Overview>高機能なゲーマー向けチャットシステム</Overview>
+    </Software>
+    <Software>
+        <Name>Firefox</Name>
+        <Overview>カスタマイズ性に優れた軽量ブラウザ</Overview>
+    </Software>
+    <Software>
+        <Name>FirefoxNightly</Name>
+        <Overview>カスタマイズ性に優れた軽量ブラウザのデイリービルド版</Overview>
+    </Software>
+    <Software>
+        <Name>NoxPlayer</Name>
+        <Overview>高機能なAndroidエミュレーター</Overview>
+    </Software>
+    <Software>
+        <Name>Opera</Name>
+        <Overview>広告ブロックを標準搭載したブラウザ</Overview>
+    </Software>
+    <Software>
+        <Name>Steam</Name>
+        <Overview>世界一のゲームプラットフォーム</Overview>
+    </Software>
+    <Software>
+        <Name>Unityhub</Name>
+        <Overview>Assetを追加することで機能を追加できる物理演算・ゲームエンジン</Overview>
+    </Software>
+    <Software>
+        <Name>VSCode</Name>
+        <Overview>Microsoft製のオープンソースコードエディタ</Overview>
+    </Software>
+    <Software>
+        <Name>vcredist</Name>
+        <Overview>VisualC++製ソフトを動かすためのランタイム　※VC2010以前はダウンロードのみ</Overview>
+    </Software>
+</Application>

@@ -7,9 +7,9 @@ Add-Type -AssemblyName PresentationFramework
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     Title="WindowsStartdash"
-    Width="400" Height="200pt">
+    Width="500" Height="200pt">
     <StackPanel>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
             <StackPanel x:Name="application">
                 <RadioButton Content="PlaceHolder"></RadioButton>
                 <RadioButton Content="PlaceHolder"></RadioButton>
@@ -22,27 +22,37 @@ Add-Type -AssemblyName PresentationFramework
                 <RadioButton Content="PlaceHolder"></RadioButton>
                 <RadioButton Content="PlaceHolder"></RadioButton>
             </StackPanel>
-            <Label Content="  " FontSize="10pt"/>
+            <StackPanel x:Name="Overview">
+                <Label x:Name="label01" Content="  " HorizontalAlignment="Left" Margin="0,-5,0,0" VerticalAlignment="Top" FontSize="10"/>
+                <Label x:Name="label02" Content="  " HorizontalAlignment="Left" Margin="0,-8,0,0" VerticalAlignment="Top" FontSize="10"/>
+                <Label x:Name="label03" Content="  " HorizontalAlignment="Left" Margin="0,-8,0,0" VerticalAlignment="Top" FontSize="10"/>
+                <Label x:Name="label04" Content="  " HorizontalAlignment="Left" Margin="0,-8,0,0" VerticalAlignment="Top" FontSize="10"/>
+                <Label x:Name="label05" Content="  " HorizontalAlignment="Left" Margin="0,-8,0,0" VerticalAlignment="Top" FontSize="10"/>
+                <Label x:Name="label06" Content="  " HorizontalAlignment="Left" Margin="0,-8,0,0" VerticalAlignment="Top" FontSize="10"/>
+                <Label x:Name="label07" Content="  " HorizontalAlignment="Left" Margin="0,-8,0,0" VerticalAlignment="Top" FontSize="10"/>
+                <Label x:Name="label08" Content="  " HorizontalAlignment="Left" Margin="0,-8,0,0" VerticalAlignment="Top" FontSize="10"/>
+                <Label x:Name="label09" Content="  " HorizontalAlignment="Left" Margin="0,-8,0,0" VerticalAlignment="Top" FontSize="10"/>
+                <Label x:Name="label10" Content="  " HorizontalAlignment="Left" Margin="0,-8,0,0" VerticalAlignment="Top" FontSize="10"/>
+            </StackPanel>
         </StackPanel>
-        <Label x:Name="msg"  Content="  " FontSize="10pt"/>
         <Button x:Name="btn1" Content="Download"  FontSize="10pt" />
     </StackPanel>
 </Window>
-
 '@
 
 $reader = New-Object System.Xml.XmlNodeReader $xaml
 $frm = [System.Windows.Markup.XamlReader]::Load($reader)
 $application = $frm.FindName("application")
-$msg = $frm.FindName("msg")
+$msg = $frm.FindName("Overview")
+$XML = [XML](Get-Content ./Application.xml)
 
-# 蜈ｨ縺ｦ縺ｮRadioButton繧帝撼陦ｨ遉ｺ縺ｫ縺吶ｋ
+# 全てのRadioButtonを非表示にする
 foreach ($s in $application.Children) {
     $s.Visibility = "Collapsed"
 }
 
-# RadioButton縺ｮContent繧定ｨｭ螳壹＠縲∬｡ｨ遉ｺ縺吶ｋ
-$applicationList = "Bluestacks Discord Firefox FirefoxNightly NoxPlayer Opera Steam Unityhub VSCode vc_redist".split(" ")
+# RadioButtonのContentを設定し、表示する
+$applicationList = $XML.Application.Software.Name
 $n = 0
 $children = $application.Children
 foreach ($c in $applicationList) {
@@ -52,7 +62,18 @@ foreach ($c in $applicationList) {
     $n += 1
 }
 
-# 驕ｸ謚槭＆繧後◆鬆�逶ｮ繧定ｿ斐☆
+# RadioButtonのContentを設定し、表示する
+$overviewList = $XML.Application.Software.Overview
+$n = 0
+$childrenO = $msg.Children
+foreach ($c in $overviewList) {
+    $massage = $childrenO[$n]
+    $massage.Content = $c
+    $massage.Visibility = "Visible"
+    $n += 1
+}
+
+# 選択された項目を返す
 function getChecked($parent) {
     $checked = ""
     foreach ($child in $parent.Children) {
