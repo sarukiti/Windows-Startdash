@@ -1,0 +1,1 @@
+Invoke-WebRequest -Uri "https://aka.ms/win32-x64-user-stable" -OutFile "VSCode.exe"

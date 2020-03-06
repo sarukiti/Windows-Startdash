@@ -1,0 +1,1 @@
+Invoke-WebRequest -Uri "https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.exe" -OutFile "Unityhub.exe"

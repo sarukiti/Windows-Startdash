@@ -21,7 +21,6 @@ Add-Type -AssemblyName PresentationFramework
         <RadioButton Content="PlaceHolder"></RadioButton>
         <RadioButton Content="PlaceHolder"></RadioButton>
         <RadioButton Content="PlaceHolder"></RadioButton>
-        <RadioButton Content="PlaceHolder"></RadioButton>
       </StackPanel>
       <Label Content="  " FontSize="10pt"/>
     </StackPanel>
@@ -42,7 +41,7 @@ foreach ($s in $application.Children) {
 }
 
 # RadioButtonのContentを設定し、表示する
-$applicationList = "Bluestacks Discord Firefox FirefoxNightly NoxPlayer Opera Steam".split(" ")
+$applicationList = "Bluestacks Discord Firefox FirefoxNightly NoxPlayer Opera Steam Unityhub VSCode vc_redist".split(" ")
 $n = 0
 $children = $application.Children
 foreach ($c in $applicationList) {
