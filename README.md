@@ -2,6 +2,8 @@
 Powershellで動作する自動ソフトウェアインストールツールです  
 # 使い方　　
 Core.ps1を右クリックしてPowershellを実行してください。
+2010年以前のC++再頒布可能パッケージはダウンロードのみとなっているので各自で実行するとインストールできます
+ダウンロードディレクトリはCore.ps1があるところです
 # ソフトウェア追加のしかた
 本家Serene-Startdashと比べて面倒です  
 まず``<RadioButton Content="PlaceHolder"></RadioButton>``を一行追加  
