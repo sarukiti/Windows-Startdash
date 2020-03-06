@@ -7,27 +7,28 @@ Add-Type -AssemblyName PresentationFramework
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     Title="WindowsStartdash"
-    Width="170pt" Height="170pt">
-  <StackPanel>
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-      <StackPanel x:Name="application">
-        <RadioButton Content="PlaceHolder"></RadioButton>
-        <RadioButton Content="PlaceHolder"></RadioButton>
-        <RadioButton Content="PlaceHolder"></RadioButton>
-        <RadioButton Content="PlaceHolder"></RadioButton>
-        <RadioButton Content="PlaceHolder"></RadioButton>
-        <RadioButton Content="PlaceHolder"></RadioButton>
-        <RadioButton Content="PlaceHolder"></RadioButton>
-        <RadioButton Content="PlaceHolder"></RadioButton>
-        <RadioButton Content="PlaceHolder"></RadioButton>
-        <RadioButton Content="PlaceHolder"></RadioButton>
-      </StackPanel>
-      <Label Content="  " FontSize="10pt"/>
+    Width="400" Height="200pt">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel x:Name="application">
+                <RadioButton Content="PlaceHolder"></RadioButton>
+                <RadioButton Content="PlaceHolder"></RadioButton>
+                <RadioButton Content="PlaceHolder"></RadioButton>
+                <RadioButton Content="PlaceHolder"></RadioButton>
+                <RadioButton Content="PlaceHolder"></RadioButton>
+                <RadioButton Content="PlaceHolder"></RadioButton>
+                <RadioButton Content="PlaceHolder"></RadioButton>
+                <RadioButton Content="PlaceHolder"></RadioButton>
+                <RadioButton Content="PlaceHolder"></RadioButton>
+                <RadioButton Content="PlaceHolder"></RadioButton>
+            </StackPanel>
+            <Label Content="  " FontSize="10pt"/>
+        </StackPanel>
+        <Label x:Name="msg"  Content="  " FontSize="10pt"/>
+        <Button x:Name="btn1" Content="Download"  FontSize="10pt" />
     </StackPanel>
-    <Label x:Name="msg"  Content="  " FontSize="10pt"/>
-    <Button x:Name="btn1" Content="Download"  FontSize="10pt" />
-  </StackPanel>
 </Window>
+
 '@
 
 $reader = New-Object System.Xml.XmlNodeReader $xaml
