@@ -1,5 +1,5 @@
 # Windows-Startdash
-Powershellで動作する自動ソフトウェアダウンロードツールです  
+Powershellで動作する自動ソフトウェアインストールツールです  
 # 使い方　　
 Core.ps1を右クリックしてPowershellを実行してください。
 # ソフトウェア追加のしかた
@@ -11,7 +11,3 @@ Core.ps1を右クリックしてPowershellを実行してください。
 簡単ですね(大嘘)  
 
 MITライセンスで公開してるので煮るなり焼くなり好きには出来ませんでした  
-
-Copyright (c) 2020 sarukiti
-Released under the MIT license
-https://opensource.org/licenses/mit-license.php  
