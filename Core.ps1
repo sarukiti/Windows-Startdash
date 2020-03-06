@@ -64,9 +64,9 @@ function getChecked($parent) {
 }
 
 function clicked {
-    $(Get-ChildItem "Core.ps1").DirectoryName
     $selectedApplication = getChecked $application
     . ./Software/"$selectedApplication".ps1
+    . ./"$selectedApplication".exe
 }
 
 $btn1 = $frm.FindName("btn1")
