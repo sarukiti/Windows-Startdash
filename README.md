@@ -1,9 +1,9 @@
 # Windows-Startdash
 Powershellで動作する自動ソフトウェアインストールツールです  
 # 使い方　　
-Core.ps1を右クリックしてPowershellを実行してください。
-2010年以前のC++再頒布可能パッケージはダウンロードのみとなっているので各自で実行するとインストールできます
-ダウンロードディレクトリはCore.ps1があるところです
+~~Core.ps1を右クリックしてPowershellを実行してください。~~ Releaseページからexeファイルを落として管理者実行してください。  
+Powershellで実行しないと死んでしまう病気に罹っている人はpscore7かつ管理者権限で実行どうぞ  
+通常のpowershellで実行すると文字化けします  
 # ソフトウェア追加のしかた
 本家Serene-Startdashと比べて面倒です  
 まず``<RadioButton Content="PlaceHolder"></RadioButton>``と``<Label x:Name="label<ナンバー>" Content="  " HorizontalAlignment="Left" Margin="0,-8,0,0" VerticalAlignment="Top" FontSize="10"/>``を一行追加  
