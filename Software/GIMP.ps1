@@ -1,0 +1,1 @@
+Invoke-WebRequest -Uri "https://download.gimp.org/mirror/pub/gimp/v2.10/windows/gimp-2.10.18-setup.exe" -OutFile "GIMP.exe"

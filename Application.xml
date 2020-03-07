@@ -3,7 +3,6 @@
     <Software>
         <Name>Bluestacks</Name>
         <Overview>軽快に動作するAndroidエミュレーター</Overview>
-        <URL>http://cdn3.bluestacks.com/downloads/windows/bgp/4.180.0.1051/29c601a4ce7cd71c6c370cdd097e45b7/BlueStacksMicroInstaller_4.180.0.1051_native.exe</URL>
     </Software>
     <Software>
         <Name>Discord</Name>
@@ -39,6 +38,10 @@
     </Software>
     <Software>
         <Name>vcredist</Name>
-        <Overview>VisualC++製ソフトを動かすためのランタイム　※VC2010以前はダウンロードのみ</Overview>
+        <Overview>VisualC++製ソフトを動かすためのランタイム</Overview>
+    </Software>
+    <Software>
+	<Name>GIMP</Name>
+	<Overview>オープンソースな高機能画像編集ソフト</Overview>
     </Software>
 </Application>
