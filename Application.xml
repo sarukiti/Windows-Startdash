@@ -44,8 +44,8 @@
 	<Name>GIMP</Name>
 	<Overview>オープンソースな高機能画像編集ソフト</Overview>
     </Software>
-    <Software>
+v   <Software>
 	<Name>Flast</Name>
-	<Overview>SereneTeamが開発した、Chromiumベースのブラウザ。Twitterを旧UIで見ることが出来る</Overview>
+	<Overview>SereneTeamが開発したChromiumベースのブラウザ　Twitterを旧UIで見ることができる</Overview>
     </Software>
 </Application>
